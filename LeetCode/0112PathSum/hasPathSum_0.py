@@ -1,5 +1,5 @@
-from ...  import DataType
+class Solution(object):
+    def hasPathSum(self,root,sum):
+        return True
 
-a=TreeNode(x)
 
-print a.val
