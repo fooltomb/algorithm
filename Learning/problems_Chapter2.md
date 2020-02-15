@@ -34,11 +34,11 @@ Case 2:No answer
 
   \#######
 
-​    \#####
+    \#####
 
-​      \###
+      \###
 
-​        \#
+        \#
 
 [答案](https://github.com/fooltomb/algorithm/blob/master/Learning/answers/test2-3.py)
 
@@ -62,7 +62,7 @@ Case 2:0.00001
 
 [答案](https://github.com/fooltomb/algorithm/blob/master/Learning/answers/test2-4.py)
 
-####习题2-5 分数化小数(decimal)
+#### 习题2-5 分数化小数(decimal)
 
 ​		输入正整数a,b,c，输出a/b的小数形式，精确到小数点后c位$a,b<10^6$,c<100。输入包含多组数据，结束标记a=b=c=0。
 
@@ -82,12 +82,3 @@ Case 2:0.00001
 
 [答案](https://github.com/fooltomb/algorithm/blob/master/Learning/answers/test2-6.py)
 
-#### 习题3-1 得分(Score,ACM/ICPC Seoul2005,UVa1585)
-
-​		给出一个由O和X组成的串(长度为1～80)，统计得分，每个O的得分为目前连续出现的O的个数，X的得分为0。例如，OOXXOXXOOO的得分为1+2+0+0+1+0+0+1+2+3。
-
-[答案](https://github.com/fooltomb/algorithm/blob/master/Learning/answers/test3-1.py)
-
-
-
-c
