@@ -5,28 +5,17 @@ class Solution:
         if length<=numRows or numRows==1:
             return s
         c=(2*numRows-2)#4
-        r=length%c#1
-        array=[]
-        for i in range(length/c):
-            res+=s[i*c]
-            array.append(i*c)
-        if r>0:
-            array.append(length-r)
-            res+=s[length-r]
-            
-        if numRows>2:
-            for i in range(0,numRows-2):
-                res+=s[i]
-                for j in array:
-                    res+=s[j+c-i]
-            
-        for i in range(length/c):
-            res+=s[i*c+numRows-1]        
-        
-        print(res)
+        for j in range(numRows):
+            for i in range(length//c+1):
+                if (i+1)*c-j<length and (i+1)*c-j!=i*c+j and j!=0:
+                    res+=s[i*c+j]
+                    res+=s[(i+1)*c-j]
+                elif i*c+j<length:
+                    res+=s[i*c+j]
+            #print(res)
         return res
 
 
 if __name__=="__main__":
         s=Solution()
-        s.convert("fefaeadef",3)
+        print(s.convert("fefaeadefgpgg",3))
