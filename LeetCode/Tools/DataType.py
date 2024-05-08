@@ -41,3 +41,22 @@ def stringToTreeNode(input):
             nodeQueue.append(node.right)
     return root
 
+def stringToListNode(input):
+    input=input.strip()
+    input=input[1:-1]
+    if not input:
+        return None
+    inputValues=[s.strip() for s in input.split(',')]
+    root=ListNode(int(inputValues[0]))
+    cur=root
+    for i in range(1,len(inputValues)):
+        cur.next=ListNode(int(inputValues[i]))
+        cur=cur.next
+    return root
+
+def listNodeToIntList(node):
+    res=[]
+    while node!=None:
+        res.append(node.val)
+        node=node.next
+    return res
