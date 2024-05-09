@@ -56,7 +56,9 @@ def stringToListNode(input):
 
 def listNodeToIntList(node):
     res=[]
-    while node!=None:
+    cnt=0
+    while node!=None and cnt<20:
         res.append(node.val)
         node=node.next
+        cnt+=1
     return res
